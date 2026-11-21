@@ -6,6 +6,16 @@ This CSC 311 lab demonstrates the Producer-Consumer pattern using Java multithre
 
 The program uses `ArrayBlockingQueue` to coordinate threads and measures customer waiting times under different staffing conditions.
 
+## Author
+Ethan Mikucki
+
+## Individual Contributions
+- Implemented the CheckoutQueue, Customer, and Cashier classes.
+- Created the CostcoSimulation main class.
+- Added customer waiting-time measurements.
+- Ran five simulation experiments.
+- Analyzed staffing costs and checkout performance.
+
 ## Classes
 
 - `CheckoutQueue.java` — Manages customers waiting for checkout using a thread-safe queue and tracks waiting times.
