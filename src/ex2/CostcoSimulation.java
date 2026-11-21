@@ -2,14 +2,22 @@
 package ex2;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class CostcoSimulation {
 
     public static void main(String[] args) throws InterruptedException {
 
-        int numberOfCustomers = 20;
-        int numberOfCashiers = 3;
-        int queueCapacity = 10;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter number of customers: ");
+        int numberOfCustomers = scanner.nextInt();
+
+        System.out.print("Enter number of cashiers: ");
+        int numberOfCashiers = scanner.nextInt();
+
+        System.out.print("Enter checkout queue capacity: ");
+        int queueCapacity = scanner.nextInt();
 
         CheckoutQueue queue = new CheckoutQueue(queueCapacity);
 
